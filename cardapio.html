@@ -1,0 +1,41 @@
+<!-- cardapio.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cardápio</title>
+</head>
+<body>
+    <div class="cardapio-container">
+        <h1>Cardápio</h1>
+
+        <div class="produto" id="hamburguer-classico">
+            <div class="detalhes-produto">
+                <img class="imagem-lanche" src="images/classico.jpg" alt="Hambúrguer Clássico">
+                <div class="info-lanche">
+                    <h2>Hambúrguer Clássico</h2>
+                    <p>Pão, carne, queijo, alface e tomate.</p>
+                    <h3>Preço: R$10,00</h3>
+                    <button onclick="adicionarAoPedido('Hambúrguer Clássico', 10.00)">Adicionar ao Pedido</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto" id="hamburguer-vegetariano" onclick="exibirDetalhes('Hambúrguer Vegetariano', 'Pão, hambúrguer de grão-de-bico, queijo, alface e tomate.', 12.00, 'hamburguer2.jpg')">
+            <div class="detalhes-produto">
+                <img class="imagem-lanche" src="hamburguer2.jpg" alt="Hambúrguer Vegetariano">
+                <div class="info-lanche">
+                    <h2>Hambúrguer Vegetariano</h2>
+                    <p>Pão, hambúrguer de grão-de-bico, queijo, alface e tomate.</p>
+                    <p>Preço: R$12,00</p>
+                    <button onclick="adicionarAoPedido('Hambúrguer Vegetariano', 12.00)">Adicionar ao Pedido</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adicione mais produtos conforme necessário -->
+    </div>
+</body>
+</html>
